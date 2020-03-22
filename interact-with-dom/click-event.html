@@ -2,8 +2,9 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
 <div id="app">
-    <button v-on:click="increase(2)">Click me</button>
-    <p>{{ counter }}</p>
+    <button v-on:click="increase(2, $event)">Click me</button>
+    <button v-on:click="counter++">Click me</button>
+    <p>{{ counter * 2 > 10 ? 'Greater than 10' : 'Smaller than 10' }}</p>
     <p v-on:mousemove="updateCoordinates">
         Coordinates: {{ x }}, {{ y }}
         - <span v-on:mousemove.stop="">DEAD SPOT</span>
@@ -20,7 +21,7 @@ new Vue({
         y: 0
     },
     methods: {
-        increase: function (step) {
+        increase: function (step, event) {
             this.counter += step;
         },
         updateCoordinates: function(event) {

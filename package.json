@@ -1,0 +1,22 @@
+{
+  "name": "vue2-complete-guide-vue-router-vuex",
+  "version": "1.0.0",
+  "description": "Vue.js is an awesome JavaScript Framework for building Frontend Applications! VueJS mixes the Best of Angular + React!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toniramon/vue2-complete-guide-vue-router-vuex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toniramon/vue2-complete-guide-vue-router-vuex/issues"
+  },
+  "homepage": "https://github.com/toniramon/vue2-complete-guide-vue-router-vuex#readme",
+  "dependencies": {
+    "webserver": "^4.0.2"
+  }
+}
